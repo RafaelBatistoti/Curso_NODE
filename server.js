@@ -13,7 +13,7 @@ app.use('/estoque', mercadoRotas)
 
 
 app.get("/", (req, res) => {
-  res.send("Running");
+  res.send("Running Server");
 });
 
 
