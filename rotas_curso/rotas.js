@@ -38,7 +38,7 @@ router.post("/cursos", (req, res) => {
 router.put("/cursos/:id", (req, res) => {
   const updateCurso = tabelaCursos.find((c) => c.id === parseInt(req.params.id));
   if (!updateCurso) {
-    return res.status(404).send("Curso não encontrado");
+    return res.status(404).send("curso não encontrado");
   }
   const { error } = validation(req.body);
   if (error) {
