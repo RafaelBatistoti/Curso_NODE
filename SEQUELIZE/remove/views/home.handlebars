@@ -1,0 +1,15 @@
+<h2>Usuários Cadastrados</h2>
+<div class="container">
+  {{#each users as |alias|}}
+    <div class="item">
+      <h4> {{this.name}} </h4>
+      <p> {{this.occupation}} </p>
+      <div class="action">
+        <a href="/user/{{this.id}}">Details</a>
+        <form action="/user/remove/{{this.id}}" method="POST">
+          <input type="submit" value="Remove" class="btn btn-danger" />
+        </form>
+      </div>
+    </div>
+  {{/each}}
+</div>

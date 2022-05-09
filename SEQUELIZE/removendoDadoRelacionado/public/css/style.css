@@ -1,0 +1,54 @@
+.form-group,
+.form-control {
+  margin-top: 1rem !important;
+  border: none !important;
+}
+
+h2 {
+  margin-top: 1rem !important;
+}
+
+h3 {
+  padding-top: 1rem;
+  border-top: #ccc solid 2px;
+}
+.adress-list p {
+  padding-top: 1rem;
+ width: 500px;
+  border-top: #ccc solid .5px;
+}
+.adress-list {
+  margin-left: 1rem;
+ 
+}
+
+.form,
+h2 {
+  margin-left: 1rem !important;
+}
+
+.btn {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.item {
+  border-bottom: 0.5px solid #ccc;
+  padding: 1rem;
+  display: inline-block;
+  margin-left: 5rem;
+  background-color: #e5e4e2;
+}
+
+.nav-link {
+  display: inline-block !important;
+  border-bottom: #ccc solid 1px;
+}
+
+
+
+a,
+h4,
+p {
+  margin-left: 0.5rem;
+}

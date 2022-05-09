@@ -1,0 +1,21 @@
+
+.form-group {
+  margin-top: 1rem !important;
+}
+
+h2 {
+    margin-top: 1rem!important;
+}
+
+.form, h2{
+    margin-left:  1rem !important;
+}
+
+.btn{
+    margin-top: 1rem ;
+}
+
+.item{
+    border-bottom: 0.5px solid #ccc;
+    padding: 1rem;
+}

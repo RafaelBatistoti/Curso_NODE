@@ -1,0 +1,38 @@
+.form-group,
+.form-control {
+  margin-top: 1rem !important;
+  border: none !important;
+}
+h3,
+h2 {
+  margin-top: 1rem !important;
+}
+
+.form,
+h2 {
+  margin-left: 1rem !important;
+}
+
+.btn {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.item {
+  border-bottom: 0.5px solid #ccc;
+  padding: 1rem;
+  display: inline-block;
+  margin-left: 5rem;
+  background-color: #e5e4e2;
+}
+
+.nav-link {
+  display: inline-block !important;
+  border-bottom: #ccc solid 1px;
+}
+
+a,
+h4,
+p {
+  margin-left: 0.5rem;
+}
