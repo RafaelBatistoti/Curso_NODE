@@ -1,0 +1,74 @@
+nav {
+  background-color: crimson;
+}
+
+nav a {
+  text-decoration: none;
+  color: whitesmoke !important;
+}
+.form-control {
+  margin-left: 1rem !important;
+  border: none;
+}
+
+.form-control,
+input,
+textarea {
+  margin-left: 0.5rem !important;
+  display: block !important;
+  width: 50%;
+}
+
+.btn{
+    width: 4rem !important;
+}
+
+.form-control input{
+    padding: .3rem;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+  padding-bottom: 2rem !important;
+}
+label{
+    margin-bottom: .5rem;
+}
+
+h1 {
+  padding: 0.5rem;
+}
+
+.listagem{
+  display: flex;
+  justify-content:  space-between;
+  width: 400px;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.actions form{
+  margin: 0;
+}
+
+button{
+display: flex;
+
+}
+
+.actions button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.title.done{
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+
+i{
+  margin-left: 1em;
+}
+
