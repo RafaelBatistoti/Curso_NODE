@@ -1,0 +1,60 @@
+<div>
+  {{#if search}}
+    <h1>Você está buscando por: <span class="text-info">{{search}}</span></h1>
+    {{#if toughtQnty}}
+      <small class="pb-1">Foram encontrarados:
+        <span class="text-info">{{toughtQnty}}</span>
+        pensamentos</small>
+    {{else}}
+      <small>Nenhum resultado encontrado para o termo:
+        <span class="text-info">{{search}}</span></small>
+    {{/if}}
+  {{else}}
+    <h1>Todos os pensamentos!</h1>
+  {{/if}}
+</div>
+<div>
+  <form action="/" method="GET">
+    <div class="input-group">
+      <input
+        type="text"
+        class="form-control rounded"
+        placeholder="Pesquise aqui"
+        name="search"
+      />
+      <input type="submit" class="btn btn-outline-primary" value="Buscar" />
+    </div>
+  </form>
+</div>
+<div class="d-flex">
+  <form action="/" method="GET" class="me-3">
+
+    <span class="h5">Ordenar por:</span>
+    <input type="hidden" name="search" value="{{this.id}}" />
+    <input type="hidden" name="order" value="old" />
+    <button type="submit" class="p-1 border rounded"><i
+        class="bi bi-arrow-down"
+      ></i></button>
+  </form>
+  <form action="/" method="GET">
+    <input type="hidden" name="search" value="{{this.id}}" />
+    <input type="hidden" name="order" value="new" />
+    <button type="submit" class="p-1 border rounded"><i
+        class="bi bi-arrow-up"
+      ></i></button>
+  </form>
+  <div>
+    <a class="m-4 text-decoration-none" href="/">Limpar</a>
+  </div>
+</div>
+<div>
+  {{#each toughts}}
+    <figure>
+      <em class="blockquote">
+        {{this.title}}
+      </em>
+      <figcaption class="text-success"><small>Por:
+          {{this.User.name}}</small></figcaption>
+    </figure>
+  {{/each}}
+</div>

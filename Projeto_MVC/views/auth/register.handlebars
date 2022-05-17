@@ -1,0 +1,43 @@
+<h2>Rigistrar</h2>
+<form action="/register" method="POST">
+  <div class="form-group mb-4">
+    <label for="name">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      name="name"
+      placeholder="Enter Name" required
+    />
+  </div>
+  <div class="form-group mb-4">
+    <label for="email">Email address</label>
+    <input
+      type="email"
+      class="form-control"
+      name="email"
+      placeholder="Enter email" required
+    />
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input
+      type="password"
+      class="form-control mb-3"
+      name="password"
+      placeholder="Password"required
+    />
+  </div>
+  <div class="form-group">
+    <label for="confirmpassword">Confirm password</label>
+    <input
+      type="password"
+      class="form-control mb-3"
+      placeholder="Confirm Password" required
+      name="confirmpassword"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <p class="p-2 mt-2">
+    <small>Já possui conta?</small>
+    <a href="/login"><small>Click aqui</small></a></p>
+</form>

@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <title>Pensamentos</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="/img/lampadas.png" alt="Pensamentos" />
+        </a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/"
+            >Pensamentos</a>
+          </li>
+          {{#if session.userid}}
+            <li class="nav-item"><a
+                class="nav-link"
+                href="/tought/dashboard"
+              >Dashboard</a></li>
+            <li class="nav-item"><a
+                class="nav-link"
+                href="/logout"
+              >Sair</a></li>
+          {{else}}
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Entrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register">Registrar</a>
+            </li>
+          {{/if}}
+
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      {{#if messages.message}}
+        <div class="mt-5 text-center bg-info text-white mw-">
+          <p class="p-1">{{messages.message}} </p>
+        </div>
+      {{/if}}
+      {{{body}}}
+    </div>
+    <footer class="text-center text-black bg-light">
+      <p class="p-5"><span>Tought</span>&copy; 2022</p>
+    </footer>
+  </body>
+</html>
